@@ -1,0 +1,111 @@
+@font-face {
+  font-family: outfit;
+  src: url(fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: young-serif;
+  src: url(fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+  font-family: "outfit", sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  margin: 100px 0;
+  width: 50%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+h1 {
+  font-family: "young-serif", serif;
+  font-weight: 400;
+  color: hsl(24, 5%, 18%);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.preparation-time {
+  background-color: hsl(330, 100%, 98%);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.preparation-time span {
+  font-weight: bold;
+  color: hsl(332, 51%, 32%);
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-family: "young-serif", serif;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+ul li::marker,
+ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+
+ul,
+ol {
+  padding-left: 25px;
+}
+
+li {
+  list-style-position: outside;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+
+table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 10px 30px;
+}
+
+td:last-child {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+hr {
+  border-color: 1px solid hsl(30, 18%, 87%);
+}
